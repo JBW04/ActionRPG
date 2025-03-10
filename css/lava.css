@@ -1,0 +1,58 @@
+.player-img {
+    width: 250px;
+}
+
+.arena-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.player-container, .enemy-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.player-img, .enemy-img {
+    width: 150px;
+}
+
+.health-bars progress {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+.fight-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fight-log {
+    background: rgba(0, 0, 0, 0);
+    padding: 10px;
+    height: 100px;
+    overflow-y: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+}
+
+.fight-button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
