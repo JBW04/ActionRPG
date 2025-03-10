@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActionRPG</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="#">Home</a>
+        <a href="#">My Profile</a>
+        <a href="#">My Inventory</a>
+        <a href="#">My Workshop</a>
+        <a href="#">My Mailbox</a>
+        <a href="#">My Messages</a>
+        <a href="#">Friends</a>
+        <a href="#">Settings</a>
+        <a href="#">About/Updates</a>
+        <a href="#">Logout</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Where do you want to go?</h1>
+        <div class="menu">
+         
+        </div>
+    </div>
+
+    <div class="chatbox">
+        <h2>Chat</h2>
+        <div class="chat-messages">
+            <p><strong>User1:</strong> Hello</p>
+            <p><strong>User2:</strong> Hi there!</p>
+        </div>
+        <input type="text" id="chatInput" placeholder="Type a message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+ 
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>
