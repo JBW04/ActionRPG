@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActionRPG</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/crystal.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <a href="/index.html">Home</a>
+        <a href="#">My Profile</a>
+        <a href="#">My Inventory</a>
+        <a href="#">My Workshop</a>
+        <a href="#">My Mailbox</a>
+        <a href="#">My Messages</a>
+        <a href="#">Friends</a>
+        <a href="#">Settings</a>
+        <a href="#">About/Updates</a>
+        <a href="#">Logout</a>
+    </div>
+
+
+
+
+    <div class="main-content">
+        <h1>You ready to fight in the crystal arena?</h1>
+
+        <!--Enemy Arena-->
+        <div class="arena-container">
+
+            <!--Player Section-->
+            <div class="player-container">
+                <h3>You</h3>
+                <img src="/imgs/characters/ninja.png" alt="Player Charater" class="player-img">
+                <p>Your Health: <span id="player-health">100</span></p>
+                <progress id="player-health-bar" value="100" max="100"></progress>
+            </div>
+
+            <!--Enemy Section-->
+            <div class="enemy-container">
+                <h3>Enemy: <span id="enemy-name">None</span></h3>
+                <img id="enemy-img" src="" alt="Enemy" class="enemy-img" style="display: none;">
+                <p>Enemy Health: <span id="enemy-health">0</span></p>
+                <progress id="enemy-health-bar" value="0" max="100"></progress>
+            </div>
+
+        </div>
+
+        <!-- Fight Log & Button--> 
+         <div class="fight-controls">
+            <button class="fight-button" onclick="attackEnemy()">Attack</button>
+            <div class="fight-log" id="fight-log">
+                <p>Battle log will appear here...</p>
+            </div>
+         </div>
+
+       
+    </div>
+
+
+    <div class="chatbox">
+        <h2>Chat</h2>
+        <div class="chat-messages">
+            <p><strong>User1:</strong> Hello</p>
+            <p><strong>User2:</strong> Hi there!</p>
+        </div>
+        <input type="text" id="chatInput" placeholder="Type a message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+ 
+    
+    <script src="/js/script.js"></script>
+    <script src="/js/crystalArena.js"></script>
+</body>
+</html>

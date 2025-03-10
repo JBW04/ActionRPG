@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let playerLevel = 4; // Example: Replace with actual player level from storage or backend
+    let playerLevel = 15; // Example: Replace with actual player level from storage or backend
 
     function unlockArena(id, requiredLevel, link) {
         let arenaElement = document.getElementById(id);

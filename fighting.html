@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,11 +25,9 @@
         <h1>Ready To Start Fighting?</h1>
         <div class="menu">
             <!-- Peasant Arena (Always Unlocked) -->
-            <a href="/fighting/peasant.html">
-                <div class="menu-item">
-                    <img src="/imgs/arena.png" alt="Peasant Arena">
-                    <span>Peasant Arena</span>
-                </div>
+            <a href="/fighting/peasant.html" class="menu-item">
+                <img src="/imgs/arena.png" alt="Peasant Arena">
+                <span>Peasant Arena</span>
             </a>
     
             <!-- Small Arena (Unlocks at Level 5) -->
@@ -40,22 +38,20 @@
             </a>
     
             <!-- Crystal Arena (Unlocks at Level 10) -->
-            <div id="crystal-arena" class="menu-item locked">
+            <a href="/fighting/crystal.html" id="crystal-arena" class="menu-item locked">
                 <img src="/imgs/arenas/crystal.png" alt="Crystal Arena">
                 <span>Crystal Arena</span>
                 <span class="lock-text">(Lvl 10 Required)</span>
-            </div>
-    
+            </a>
+
             <!-- Lava Arena (Unlocks at Level 15) -->
-            <div id="lava-arena" class="menu-item locked">
+            <a href="#" id="lava-arena" class="menu-item locked">
                 <img src="/imgs/arenas/lava.png" alt="Lava Arena">
                 <span>Lava Arena</span>
                 <span class="lock-text">(Lvl 15 Required)</span>
-            </div>
+            </a>
         </div>
     </div>
-    
-    
 
     <div class="chatbox">
         <h2>Chat</h2>
@@ -66,6 +62,7 @@
         <input type="text" id="chatInput" placeholder="Type a message">
         <button onclick="sendMessage()">Send</button>
     </div>
+
     <script src="/js/script.js"></script>
     <script src="/js/lockedArenas.js"></script>
 </body>
